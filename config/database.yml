@@ -21,5 +21,11 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: devglade-blog
+  username: postgres
+ # password: <%= ENV['MINERVA_WEBAPP_DATABASE_PASSWORD']
+  password: postgres
+

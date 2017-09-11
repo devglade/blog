@@ -18,10 +18,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
+    <%= javascript_include_tag("jquery.min") %>
+    <%= javascript_include_tag("skel.min") %>
+    <%= javascript_include_tag("util") %>
+    <!--[if lte IE 8]><%= javascript_include_tag("ie/respond.min") %><![endif]-->
+    <%= javascript_include_tag("main") %>
   </body>
 </html>

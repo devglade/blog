@@ -58,6 +58,8 @@ gem 'bootstrap', '~> 4.0.0.beta'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18'
 
 group :development do
   # Use Capistrano for deployment

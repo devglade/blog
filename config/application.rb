@@ -18,5 +18,7 @@ module DevGladeBlog
     config.assets.paths << "#{Rails.root}/template/future-imperfect/js"
     config.assets.paths << "#{Rails.root}/template/future-imperfect/fonts"
     config.assets.paths << "#{Rails.root}/template/future-imperfect/images"
+
+    config.assets.paths << "#{Rails.root}/devglade/images"
   end
 end

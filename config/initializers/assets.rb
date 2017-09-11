@@ -17,4 +17,5 @@ Rails.application.config.assets.precompile += %w( main.css font-awesome.min.css 
 Rails.application.config.assets.precompile += %w( jquery.min.js skel.min.js util.js ie/respond.min.js main.js )
 Rails.application.config.assets.precompile += %w( fontawesome-webfont.woff2 fontawesome-webfont.woff fontawesome-webfont.ttf )
 Rails.application.config.assets.precompile += %w( *.jpg )
+Rails.application.config.assets.precompile += %w( *.png )
 

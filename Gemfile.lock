@@ -397,7 +397,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap (~> 4.0.0.beta)
-  bootstrap-sass (~> 3.2.0)
+  bootstrap-sass (~> 3.2.0.2)
   byebug
   capistrano (= 3.6.1)
   capistrano-bundler

@@ -1,19 +1,32 @@
+<%= render 'welcome/header' %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<%= render 'welcome/menu' %>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
-
-<h2>Comments</h2>
-<%= render @article.comments %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<div id="main">
+  <!-- Post -->
+  <article class="post">
+    <header>
+      <div class="title">
+        <h2><%= @article.title %></h2>
+      </div>
+      <div class="meta">
+        <time class="published" datetime="2015-11-01">November 1, 2015</time>
+      </div>
+    </header>
+    <p><%= @article.text %></p>
+    <footer>
+        <ul class="actions">
+            <li><a href=<%= edit_article_path(@article) %> class="button big">Edit</a></li>
+            <li><a href=<%= articles_path %> class="button big">Back</a></li>
+        </ul>
+    </footer>
+  </article>
+  <section>
+  <div class="mini-post">
+      <ul class="stats">
+        <li><h2>Comments</h2><%= render @article.comments %></li>
+        <li><h2>Add a comment:</h2><%= render 'comments/form' %></li>
+      </ul>
+    </div>
+  </section>
+</div>

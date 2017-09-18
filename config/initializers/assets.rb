@@ -13,8 +13,8 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
-Rails.application.config.assets.precompile += %w( main.css font-awesome.min.css )
-Rails.application.config.assets.precompile += %w( jquery.min.js skel.min.js util.js ie/respond.min.js main.js )
+Rails.application.config.assets.precompile += %w( main.css font-awesome.min.css ie8.css ie9.css )
+Rails.application.config.assets.precompile += %w( jquery.min.js skel.min.js util.js ie/respond.min.js main.js ie/html5shiv.js )
 Rails.application.config.assets.precompile += %w( fontawesome-webfont.woff2 fontawesome-webfont.woff fontawesome-webfont.ttf fontawesome-webfont.svg )
 Rails.application.config.assets.precompile += %w( *.jpg )
 Rails.application.config.assets.precompile += %w( *.png )
